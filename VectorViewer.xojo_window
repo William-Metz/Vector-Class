@@ -574,7 +574,7 @@ Begin DesktopWindow VectorViewer
       Height          =   20
       Hint            =   ""
       Index           =   -2147483648
-      InitialValue    =   "Negate"
+      InitialValue    =   "Choose an Operation\nNegate\nMagnitude\nUnit Vector\n+\n-\nDot\nCross Product\nX Scalar\n/ Scalar"
       Italic          =   False
       Left            =   67
       LockBottom      =   False

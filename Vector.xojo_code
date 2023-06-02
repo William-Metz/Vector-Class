@@ -8,6 +8,34 @@ Protected Class Vector
 		End Sub
 	#tag EndMethod
 
+	#tag Method, Flags = &h0
+		Function Magnitude() As Double
+		  return Sqrt(Pow(Me.X, 2.0) + Pow(Me.Y,2.0) + Pow(Me.Z, 2.0))
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0
+		Function Negate() As Vector
+		  var v as Vector = new Vector(-me.X, -me.Y, -me.Z)
+		  
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0
+		Function Operator_Add(v1 as Vector) As Vector
+		  var v as Vector = new Vector(me.X + v1.X, me.Y + v1.Y, me.Z + v1.Z)
+		  return v 
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0
+		Function UnitVector() As Vector
+		  var m as double = me.Magnitude
+		  var v as Vector = new Vector(me.X/m, me.Y/m, me.Z/m)
+		  Return v
+		End Function
+	#tag EndMethod
+
 
 	#tag Property, Flags = &h0
 		X As Double
